@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+li {
+    color: red;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.bg-gradient {
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(#f2efff, #dfdefe, #ccdfff) fixed;
+}
+
+.pokedex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.pokemon-card {
+    border-radius: 5px;
+}
+
+.pokemon-card > img {
+    max-width: 30vw;
+    max-height: 30vh;
+    border-radius: 5px; 
+    border: 1px solid transparent;
+}
+
+.pokemon-card-center {
+    background-color: azure;
+    border-radius: 5px;
+}
+
+.pokemon-card-right {
+   background-color: aliceblue;
+   height: 100%;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+.pokemon-card-left{
+    background-color: aliceblue;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    min-width: 85px;
+ }
+
+.pokemon-card > img:hover {
+  cursor: pointer;
+  border: 1px solid gainsboro;
+}
+
+.label {
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    margin: 2px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}

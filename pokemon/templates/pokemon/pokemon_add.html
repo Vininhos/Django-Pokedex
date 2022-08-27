@@ -1,0 +1,12 @@
+{% extends "pokemon/base.html" %}
+{% block title %} Pokemon Add {% endblock %}
+{% block body %}
+<h1 style="text-align: center;">Adicionar Pokémons</h1>
+<form action="." method="post" style="text-align: center;">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Salvar Pokémon" formmethod="post" formenctype="multipart/form-data"></form>
+{% if formvalue %}
+<h1 style="text-align: center;">Salvo com sucesso!</h1>
+{% endif %}
+{% endblock %}
